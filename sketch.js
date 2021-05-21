@@ -1,9 +1,19 @@
 function setup() {
-  createCanvas(600, 500);
+  createCanvas(500, 600);
+  background(220);
 }
 
 function draw() {
-  background(230);
-  // Delete the slashes on the next line to "uncomment" the ellipse
-  // ellipse(50, 50, 50, 50)
+  // Background
+  background(220);
+  // Additional draw() code
+  fill(0);
+  text("Hello!", 20, 20);
+  
+  // ellipse(250, 300, 10);
+  ellipse(mouseX, mouseY, 20);
+}
+
+function mousePressed() {
+  console.log("You clicked the mouse!");
 }
