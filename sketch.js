@@ -16,10 +16,13 @@ function draw() {
   // Color settings:
     noStroke();
     fill(66, 135, 245);
+    // Draw one dot where the mouse is:
+    ellipse(mouseX, mouseY, random(8, 10));
     
     for (let i=0;i<5;i++){
-    // Draw one dot where the mouse is:
-      ellipse(mouseX, mouseY, random(8, 17));
+      // Draw another dot near the first one:
+      fill(random(0,255), random(130,140),random(240,250));
+      ellipse(mouseX + random(-10, 10), mouseY + random(-10, 10), random(2, 8));
     }
 }
 }
